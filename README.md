@@ -1,2 +1,793 @@
 # MemoryMate
-MemoryMate is an AI-powered personal memory assistant built with open-source AI, helping users store, retrieve, and understand meaningful memories, people, events, and preferences.
+
+### Your personal AI-powered memory companion
+
+MemoryMate is an AI-powered personal memory assistant designed to help you **remember the people, moments, preferences, conversations, and important details that matter to you**.
+
+Built around open-source AI, MemoryMate turns scattered memories into an organized, searchable and intelligent personal memory space.
+
+> **Built for a friend. Built with open innovation. Built to remember what matters. **
+
+---
+
+##  Why MemoryMate?
+
+We remember thousands of small details about the people we care about:
+
+* Their favorite things
+* Important dates
+* Things they told us
+* Places they want to visit
+* Gifts they might like
+* Conversations we don't want to forget
+* Small moments that become meaningful later
+
+But remembering all of this manually is difficult.
+
+** MemoryMate helps solve this problem by combining personal memory storage with an AI assistant that can understand and retrieve those memories when you need them.**
+
+For example:
+
+> **"What does Rahul like?"**
+
+MemoryMate can search relevant memories and provide an answer based on information you've previously saved.
+
+Or:
+
+> **"What would be a good birthday gift for Rahul?"**
+
+MemoryMate can use Rahul's stored interests and preferences to generate personalized suggestions.
+
+---
+
+#  Features
+
+##  AI Memory Assistant
+
+Ask natural-language questions about your stored memories.
+
+Examples:
+
+```text
+What does Rahul like?
+
+When is Priya's birthday?
+
+What did Rahul tell me about his trip?
+
+What gift should I buy for Rahul?
+
+Show me my recent memories.
+```
+
+The assistant is designed to use relevant stored memories instead of relying only on generic chatbot responses.
+
+---
+
+##  Smart Memory Management
+
+Create and organize memories with useful information such as:
+
+* Title
+* Description
+* Person
+* Date
+* Category
+* Tags
+* Importance
+* Images
+* Notes
+
+Memories can be viewed, edited, searched and organized.
+
+---
+
+##  People Profiles
+
+Create a dedicated profile for the people who matter to you.
+
+A profile can contain:
+
+* Name
+* Interests
+* Preferences
+* Important dates
+* Memories
+* Events
+* Gift ideas
+* AI-generated insights
+
+This allows MemoryMate to build a richer context around each person.
+
+---
+
+##  GiftMate
+
+Get personalized gift ideas based on stored memories.
+
+Example:
+
+```text
+Person: Rahul
+
+Known interests:
+• Photography
+• Travel
+• Technology
+
+AI suggestion:
+Photography accessories
+
+Reason:
+Rahul previously mentioned his interest in photography
+and wanting to upgrade his camera equipment.
+```
+
+The goal is to make recommendations based on **your memories**, rather than generic suggestions.
+
+---
+
+##  Events & Important Dates
+
+Keep track of:
+
+* Birthdays
+* Anniversaries
+* Meetings
+* Plans
+* Important occasions
+* Personal reminders
+
+Associate events with people and memories to keep important information connected.
+
+---
+
+##  Memory Timeline
+
+View memories chronologically.
+
+The timeline helps you see how your memories and experiences evolve over time.
+
+Filter memories by:
+
+* Person
+* Category
+* Date
+* Tags
+
+---
+
+##  Smart Search
+
+Search across your personal memory collection.
+
+Search can cover:
+
+* Memories
+* People
+* Events
+* Tags
+* Gift ideas
+
+Instead of manually browsing through everything, you can search for what you remember.
+
+---
+
+##  Voice Input
+
+Capture memories using your voice.
+
+The voice workflow is designed to allow you to:
+
+```text
+Speak
+ ↓
+Speech recognition
+ ↓
+Review text
+ ↓
+Save as memory
+```
+
+This makes recording a memory faster when typing isn't convenient.
+
+---
+
+##  AI Text-to-Speech
+
+AI responses can be read aloud using the browser's text-to-speech functionality.
+
+Useful when you want to listen instead of reading.
+
+---
+
+##  Responsive Design
+
+MemoryMate is designed to work across:
+
+*  Desktop
+*  Laptop
+*  Mobile
+*  Tablet
+
+The interface adapts to smaller screens while keeping the main functionality accessible.
+
+---
+
+##  Personal Insights
+
+MemoryMate can analyze stored information to provide useful insights such as:
+
+* Frequently remembered people
+* Common interests
+* Upcoming important dates
+* Memory categories
+* Potential gift opportunities
+
+AI-generated insights are kept separate from confirmed stored facts.
+
+---
+
+#  Open-Source AI
+
+Open-source AI is at the core of MemoryMate.
+
+The project is designed around the idea that personal memories should not have to depend entirely on closed AI systems.
+
+### Why open innovation matters
+
+Using open/open-weight AI provides opportunities for:
+
+* Greater control over the AI system
+* Ability to experiment with different models
+* More flexibility in deployment
+* Potential local inference
+* Greater transparency
+* Easier customization
+* Reduced dependency on a single closed provider
+
+MemoryMate is designed so that the AI layer can evolve as better open models become available.
+
+---
+
+#  Architecture
+
+The project follows a full-stack architecture:
+
+```text
+                    ┌─────────────────────┐
+                    │      User           │
+                    │  Desktop / Mobile   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   React Frontend    │
+                    │                     │
+                    │  MemoryMate UI      │
+                    │  AI Chat            │
+                    │  Memories           │
+                    │  People             │
+                    │  Events             │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    FastAPI Backend  │
+                    │                     │
+                    │ Authentication      │
+                    │ Memory APIs         │
+                    │ AI APIs             │
+                    │ Event APIs          │
+                    └──────────┬──────────┘
+                               │
+                 ┌─────────────┴─────────────┐
+                 ▼                           ▼
+        ┌─────────────────┐        ┌─────────────────┐
+        │    Database     │        │   Open-source   │
+        │                 │        │       AI        │
+        │ MongoDB Atlas   │        │     Gemma       │
+        └─────────────────┘        └─────────────────┘
+```
+
+---
+
+#  Tech Stack
+
+## Frontend
+
+* React
+* Vite
+* JavaScript
+* Responsive CSS
+* Framer Motion
+* Modern component-based UI
+
+## Backend
+
+* Python
+* FastAPI
+* Uvicorn
+* REST APIs
+
+## Database
+
+* MongoDB
+* MongoDB Atlas
+
+## AI
+
+* Gemma / open-weight AI
+* AI-powered memory retrieval
+* AI-generated insights
+* AI-powered recommendations
+
+## Development
+
+* Git
+* GitHub
+* DevRelay
+* Antigravity
+
+## Deployment
+
+* Render
+
+---
+
+#  Project Structure
+
+```text
+MemoryMate/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── ai/
+│   │   ├── core/
+│   │   ├── database/
+│   │   ├── schemas/
+│   │   └── main.py
+│   │
+│   ├── tests/
+│   ├── requirements.txt
+│   └── ...
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+#  Getting Started
+
+## Prerequisites
+
+Make sure you have installed:
+
+* Node.js
+* npm
+* Python 3.10+
+* Git
+* MongoDB / MongoDB Atlas account
+
+---
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/himanshugangwar5752-demo/MemoryMate.git
+```
+
+Move into the project:
+
+```bash
+cd MemoryMate
+```
+
+---
+
+#  Frontend Setup
+
+Move into the frontend:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The frontend will normally be available at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+#  Backend Setup
+
+Open another terminal.
+
+Move into the backend:
+
+```bash
+cd backend
+```
+
+Create a virtual environment:
+
+```bash
+python3 -m venv venv
+```
+
+Activate it on macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start FastAPI:
+
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+API documentation will be available at:
+
+```text
+http://localhost:8000/docs
+```
+
+---
+
+#  Environment Variables
+
+Create a `.env` file in the appropriate backend/frontend location according to the project configuration.
+
+Example:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+DATABASE_NAME=memorymate
+
+AI_MODEL=your_open_source_model
+
+SECRET_KEY=your_secret_key
+```
+
+###  Security
+
+Never commit:
+
+```text
+.env
+.env.local
+API keys
+database passwords
+authentication tokens
+private credentials
+```
+
+Use `.env.example` to document required variables without exposing secrets.
+
+---
+
+#  Mobile Development
+
+To test the application on a phone connected to the same Wi-Fi network:
+
+Start Vite with:
+
+```bash
+npm run dev -- --host 0.0.0.0
+```
+
+Then use your computer's local network IP:
+
+```text
+http://YOUR_LOCAL_IP:5173
+```
+
+The backend must also be configured to accept connections from the local network.
+
+---
+
+#  Testing
+
+Run frontend checks/build:
+
+```bash
+npm run build
+```
+
+Backend tests:
+
+```bash
+pytest
+```
+
+Before submitting, test:
+
+* Registration
+* Login
+* Logout
+* Memory creation
+* Memory editing
+* Memory deletion
+* Memory search
+* People
+* Events
+* AI Assistant
+* GiftMate
+* Voice input
+* Text-to-speech
+* Mobile responsiveness
+
+---
+
+#  Demo
+
+### Live Demo
+
+> **Coming soon / Add deployed URL here**
+
+```text
+[ADD YOUR DEPLOYED DEMO URL]
+```
+
+### Demo Video
+
+> **Add your demo video here**
+
+```text
+[ADD YOUR DEMO VIDEO URL]
+```
+
+The demo should show the application being used rather than only showing static screenshots.
+
+---
+
+
+
+### Dashboard
+
+```text
+[ADD DASHBOARD SCREENSHOT]
+```
+
+### AI Assistant
+
+```text
+[ADD AI CHAT SCREENSHOT]
+```
+
+### Memory Management
+
+```text
+[ADD MEMORY SCREENSHOT]
+```
+
+### People
+
+```text
+[ADD PEOPLE SCREENSHOT]
+```
+
+### GiftMate
+
+```text
+[ADD GIFTMATE SCREENSHOT]
+```
+
+### Mobile
+
+```text
+[ADD MOBILE SCREENSHOT]
+```
+
+---
+
+#  Built for a Friend
+
+MemoryMate was created around a simple problem:
+
+> **How can we avoid forgetting the small details that matter about the people we care about?**
+
+The project is designed for a real person who can use it to remember:
+
+* Preferences
+* Important dates
+* Conversations
+* Interests
+* Personal moments
+* Gift ideas
+
+### The person
+
+**[Add your friend's name or first name here]**
+
+### Their problem
+
+**[Describe the actual problem your friend has]**
+
+### How MemoryMate helps
+
+**[Explain how your friend uses MemoryMate]**
+
+### Their feedback
+
+**[Add their real feedback after they try the application]**
+
+> Do not add made-up feedback. Update this section after your friend actually tests the project.
+
+---
+
+#  Why This Project Matters
+
+Memory is more than storing information.
+
+It's about remembering the small details that make relationships meaningful.
+
+MemoryMate explores how AI can help with that without requiring people to manually search through notes, messages, calendars, or scattered documents.
+
+The goal is not to replace human memory or relationships.
+
+The goal is to **support them**.
+
+---
+
+#  Future Improvements
+
+Potential future features include:
+
+*  Local AI inference
+*  End-to-end encrypted memories
+*  Better voice memory capture
+*  Multimodal memory understanding
+*  Location-based memories
+*  Calendar integration
+*  Smarter reminders
+*  Semantic memory graphs
+*  Progressive Web App support
+*  Model swapping
+*  Personalized model fine-tuning
+*  Memory export
+*  Memory import
+
+---
+
+#  Contributing
+
+Contributions are welcome.
+
+### Fork the repository
+
+```bash
+git fork
+```
+
+Or fork it directly through GitHub.
+
+### Clone your fork
+
+```bash
+git clone YOUR_FORK_URL
+```
+
+### Create a branch
+
+```bash
+git checkout -b feature/your-feature
+```
+
+### Make your changes
+
+Test your changes before submitting.
+
+### Commit
+
+```bash
+git add .
+git commit -m "Add your feature"
+```
+
+### Push
+
+```bash
+git push origin feature/your-feature
+```
+
+Then open a Pull Request.
+
+---
+
+#  License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for details.
+
+---
+
+#  Hacktoberfest 2026
+
+MemoryMate was created for the **Hacktoberfest 2026 Weekend Challenge — Build for a Friend**.
+
+### Challenge Theme
+
+> **Build something with open-source AI at its core for a friend or someone you love.**
+
+MemoryMate combines:
+
+```text
+Open-source AI
+       +
+Personal memories
+       +
+Real-world problem
+       +
+Full-stack development
+       =
+MemoryMate
+```
+
+The project explores how open AI can be used to create a more customizable and user-controlled personal memory assistant.
+
+---
+
+#  Development Tools
+
+MemoryMate was developed using modern AI-assisted development tools and workflows.
+
+### Antigravity
+
+Used as the primary agentic development environment.
+
+### DevRelay
+
+Used for the DEV/MLH workflow and agent-assisted development where applicable.
+
+---
+
+#  Author
+
+**Himanshu Gangwar**
+
+GitHub:
+
+**https://github.com/himanshugangwar5752-demo**
+
+---
+
+#  Support
+
+If you find MemoryMate interesting, consider giving the repository a ⭐ on GitHub.
+
+If you have suggestions or ideas, feel free to open an issue or start a discussion.
+
+---
+
+## Made with  to remember what matters.
