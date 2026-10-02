@@ -1,0 +1,60 @@
+{
+  "name": "MemoryMate — Private AI Memory Assistant",
+  "short_name": "MemoryMate",
+  "description": "Never forget the little things that matter. Private AI memory vault powered by open-weight Gemma AI.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "window-controls-overlay"],
+  "orientation": "portrait-primary",
+  "theme_color": "#0B0F17",
+  "background_color": "#07090E",
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick AI Extract",
+      "short_name": "Extract",
+      "description": "Extract memory from conversation note with Gemma AI",
+      "url": "/dashboard?action=extract",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Ask AI Assistant",
+      "short_name": "AI Chat",
+      "description": "Query your memory vault with Gemma RAG",
+      "url": "/chat",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Friends & Loved Ones",
+      "short_name": "People",
+      "description": "View friend profiles and chronological memories",
+      "url": "/people",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "GiftMate Wishlist",
+      "short_name": "Gifts",
+      "description": "Personalized AI gift recommendations and wishlist",
+      "url": "/giftmate",
+      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+    }
+  ],
+  "categories": ["lifestyle", "productivity", "utilities", "social"]
+}
