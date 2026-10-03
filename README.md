@@ -548,30 +548,6 @@ Before submitting, test:
 
 ---
 
-#  Demo
-
-### Live Demo
-
-> **Coming soon / Add deployed URL here**
-
-```text
-[ADD YOUR DEPLOYED DEMO URL]
-```
-
-### Demo Video
-
-> **Add your demo video here**
-
-```text
-[ADD YOUR DEMO VIDEO URL]
-```
-
-The demo should show the application being used rather than only showing static screenshots.
-
----
-
-
-
 ### Dashboard
 
 ```text
@@ -582,33 +558,7 @@ The demo should show the application being used rather than only showing static 
 
 ```text
 [ADD AI CHAT SCREENSHOT]
-```
 
-### Memory Management
-
-```text
-[ADD MEMORY SCREENSHOT]
-```
-
-### People
-
-```text
-[ADD PEOPLE SCREENSHOT]
-```
-
-### GiftMate
-
-```text
-[ADD GIFTMATE SCREENSHOT]
-```
-
-### Mobile
-
-```text
-[ADD MOBILE SCREENSHOT]
-```
-
----
 
 #  Built for a Friend
 
