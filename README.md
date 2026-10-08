@@ -26,18 +26,6 @@ But remembering all of this manually is difficult.
 
 ** MemoryMate helps solve this problem by combining personal memory storage with an AI assistant that can understand and retrieve those memories when you need them.**
 
-For example:
-
-> **"What does Rahul like?"**
-
-MemoryMate can search relevant memories and provide an answer based on information you've previously saved.
-
-Or:
-
-> **"What would be a good birthday gift for Rahul?"**
-
-MemoryMate can use Rahul's stored interests and preferences to generate personalized suggestions.
-
 ---
 
 #  Features
@@ -201,19 +189,6 @@ Useful when you want to listen instead of reading.
 
 ---
 
-##  Responsive Design
-
-MemoryMate is designed to work across:
-
-*  Desktop
-*  Laptop
-*  Mobile
-*  Tablet
-
-The interface adapts to smaller screens while keeping the main functionality accessible.
-
----
-
 ##  Personal Insights
 
 MemoryMate can analyze stored information to provide useful insights such as:
@@ -315,19 +290,11 @@ The project follows a full-stack architecture:
 * MongoDB
 * MongoDB Atlas
 
-## AI
-
-* Gemma / open-weight AI
-* AI-powered memory retrieval
-* AI-generated insights
-* AI-powered recommendations
-
 ## Development
 
 * Git
 * GitHub
 * DevRelay
-* Antigravity
 
 ## Deployment
 
@@ -364,18 +331,6 @@ MemoryMate/
 ```
 
 ---
-
-#  Getting Started
-
-## Prerequisites
-
-Make sure you have installed:
-
-* Node.js
-* npm
-* Python 3.10+
-* Git
-* MongoDB / MongoDB Atlas account
 
 ---
 
@@ -527,57 +482,4 @@ Backend tests:
 
 ```bash
 pytest
-```
-
-Before submitting, test:
-
-* Registration
-* Login
-* Logout
-* Memory creation
-* Memory editing
-* Memory deletion
-* Memory search
-* People
-* Events
-* AI Assistant
-* GiftMate
-* Voice input
-* Text-to-speech
-* Mobile responsiveness
-
----
-#  License
-
-This project is licensed under the **MIT License**.
-
-See the `LICENSE` file for details.
-
----
-
-#  Development Tools
-
-MemoryMate was developed using modern AI-assisted development tools and workflows.
-
-### Antigravity
-
-Used as the primary agentic development environment.
-
-### DevRelay
-
-Used for the DEV/MLH workflow and agent-assisted development where applicable.
-
----
-
-#  Author
-
-**Himanshu Gangwar**
-
-GitHub:
-
-**https://github.com/himanshugangwar5752-demo**
-
----
-
-
-## Made with  to remember what matters.
+``` 
